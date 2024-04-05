@@ -5,7 +5,6 @@ class Carteira:
     def verificar_saldo(self):
         return self.saldo
     
-    def adicionar_dinheiro(self):
-        quantidade = float(input("Digite a quantidade de dinheiro que deseja adicionar: "))
+    def adicionar_dinheiro(self, quantidade):
         self.saldo += quantidade
         return f"Adicionado {quantidade} à carteira. Saldo atual: {self.saldo}"
